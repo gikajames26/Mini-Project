@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="/css/style.css">
+    <title>MiniProject</title>
+    <style>
+        :root{
+        font-family: 'Roboto', sans-serif;
+
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container{
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 30px 30px;
+        }
+        .btn{
+            display: inline-block;
+            background:rgb(11, 119, 47);
+            padding: 8px 16px;
+            border: rgb(12, 12, 71);
+            border-radius: 1rem;
+            border-style: dotted ;
+            text-transform: capitalize;
+        }
+        .btn:hover{
+            background:rgb(12, 12, 71);
+            color: var(1rem);
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-transform: capitalize;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+            height: 4rem;
+            margin: 0 0 1rem;
+            background: linear-gradient(70deg,#d6d9da,#2d3453, #0F5609);
+        }
+        .navbar.logo{
+            color: crimson;
+            display: flex;
+            align-items: center;
+        }
+        .navbar img{
+            width: 4rem;
+        }
+        .navbar span{
+            color: lawngreen ;
+        }
+        .navbar ul{
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul li{
+            list-style: none;
+            padding: 0.5rem;
+            margin: 2rem;
+        }
+        .navbar ul li a{
+            color: var(#2d4dd8);
+        }
+        .navbar.social{
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+        .social .fa-twitter:hover{
+            color:  #3eeefd;
+        }
+        .social .fa-facebook:hover{
+            color:  #063a87;
+        }
+        .social .fa-instagram:hover{
+            color: crimson;
+        }
+        .social .fa-linkedin:hover{
+            color:#0696de ;
+        }
+        .banner{
+            background-image:url(/image/istockphoto-1308684522-612x612.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; height: 100vh; position: relative;
+        }
+        .banner .banner-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+        }
+        .banner .banner-content h2{
+            padding-bottom: 1.5rem;
+            font-size: 3rem;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+        .banner .banner-content p{
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+
+        .about .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); gap: 30px;
+
+        }
+        .about .box-1 h2{
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: 200;
+            padding-bottom: 1.5rem;
+            background-color: #0696de;
+        }
+        .about .box-1 p{
+            line-height: 1.5rem;
+            font-size: 18px;
+        }
+        .about .box-2 h2{
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: 200;
+            padding-bottom: 1.5rem;
+        }
+        .about .box-2 p{
+            line-height: 1.5rem;
+            font-size: 18px;
+        }
+        .about .box-3 h2{
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: 200;
+            padding-bottom: 1.5rem;
+        }
+        .about .box-3 p{
+            line-height: 1.5rem;
+            font-size: 18px;
+        }
+        .box-content{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+            margin-top: 30px;
+            background: #040F41;
+            padding: 3rem;
+            margin: 0.5px;
+            border-radius: 5px;
+            border: 1px #040F41 solid;
+            box-shadow: 5px 5px 5px rgba(red, green, blue, alpha);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">
+            <span style="color:rgb(5, 77, 5);">JOP</span>
+            <span style="color: rgb(12, 12, 71);">AG</span>
+        </h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Service</li>
+            <li><a href="#"></a>Blog</li>
+            <li><a href="#"></a>Contact Us</li>
+        </ul>
+        <div class="social">
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+    </nav>
+
+    <section id="banner" class="banner">
+        <div class="banner-content">
+            <h2>
+                We ensure safety and good environment....
+            </h2>
+            <p>
+                <a href="#" class="btn"> read more</a>
+            </p>
+                </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div>
+            <h2 class="title">About</h2>
+
+            <div class="box-1">
+                <h2>Advantages of Fumigation</h2>
+                <p>quickly eradicate arthropod and/or rodent infestations in commodities and structures.</p>
+            </div>
+        </div>
+        
+        <div class="box-2">
+            <h2>Advantages of Fumigation</h2>
+            <p>quickly eradicate arthropod and/or rodent infestations in commodities and structures.</p>
+        </div>
+        <div class="box-3">
+            <h2>Advantages of Fumigation</h2>
+            <p>quickly eradicate arthropod and/or rodent infestations in commodities and structures.</p>
+        </div>
+    </section>
+    
+</body>
+</html>
